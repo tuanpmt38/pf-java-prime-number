@@ -7,6 +7,17 @@ public class PrimeNumber {
         if (number < 2)
             System.out.println("number not prime");
         else {
+            //dung vong lap while
+//            int i = 2;
+//            boolean check = true;
+//            while (i <= Math.sqrt(number)) {
+//                if (number % i == 0) {
+//                    check = false;
+//                    break;
+//                }
+//                i++;
+//            }
+            //dung vong lap for
             boolean check = true;
             for (int i = 2; i <= Math.sqrt(number); i++) {
                 if (number % i == 0) {
