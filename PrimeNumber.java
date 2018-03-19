@@ -19,7 +19,8 @@ public class PrimeNumber {
 //            }
             //dung vong lap for
             boolean check = true;
-            for (int i = 2; i <= Math.sqrt(number); i++) {
+            int CheckNumber = (int) Math.sqrt(number);
+            for (int i = 2; i <= CheckNumber; i++) {
                 if (number % i == 0) {
                     check = false;
                     break;
