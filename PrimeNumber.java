@@ -5,28 +5,18 @@ public class PrimeNumber {
         System.out.println("Enter a:");
         number = sc.nextInt();
         if (number < 2)
-            System.out.println("number not prime");
+            System.out.println("Number not prime: ");
         else {
-            //dung vong lap while
-//            int i = 2;
-//            boolean check = true;
-//            while (i <= Math.sqrt(number)) {
-//                if (number % i == 0) {
-//                    check = false;
-//                    break;
-//                }
-//                i++;
-//            }
             //dung vong lap for
-            boolean check = true;
+            boolean isCheck = true;
             int CheckNumber = (int) Math.sqrt(number);
             for (int i = 2; i <= CheckNumber; i++) {
                 if (number % i == 0) {
-                    check = false;
+                    isCheck = false;
                     break;
                 }
             }
-            if (check)
+            if (isCheck)
                 System.out.println(number + " is a prime");
             else
                 System.out.println(number + " is not a prime");
